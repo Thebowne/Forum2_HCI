@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, intial-width=1.0">
+
+<style>
+</style>
+	<link rel="stylesheet" href="style.css">
+	<title>Portofolio</title>
+	<script src="jquery-3.7.1.js"></script>
+	
+	<div class="header">
+		<div class="headerbox">
+			<h1>My profile</h1>
+		</div>
+		
+
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#socials">Socials</a></li>
+					<li><a href="#hobbies">Hobbies</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#pics">Pictures</a></li>
+				</ul>
+			</nav>
+
+	</div>
+  
+</head>
+<body>
+	<div class="main">
+		<div class="mainbox">
+			<h2  id="introduction">Name: Harry Chiu</h2>
+			<h3>Student ID: 2702357882 <br> Class: L1CC</h3>
+			<form>
+				<p>I am a: </p>
+				&nbsp;<input type="radio" id="Male" name="one">
+				&nbsp;<label for="Male">Male</label></br>
+				&nbsp;<input type="radio" id="Female" name="one">
+				&nbsp;<label for="Female">Female</label>
+			</form>
+			<h3>Introduction</h3>
+			<p>Hello, this is a little introduction to my self. 
+			My name is Harry as stated above, I am 18 years old and there are a few things in life that I 
+			thoroughly enjoy, such as CATS mmm I love cats, I want to adopt and own a kitty so bad mmm
+			little kitty, I just find them really cute. 
+			Another I really like is food, good food. It can be from any culture and any cuisine, if it taste good
+			Im devouring it.</p>
+		</div>
+		
+
+			<div class="image-box">
+				<img src="menkit.jpg">
+			</div>
+
+	</div>
+	
+	<div class= "submain">
+		<div class="box">
+		<h3 id="socials">My socials!!!</h3>
+		<p>This is my <a href="https://instagram.com/harryc_u?igshid=MzRlODBiNWFlZA==" target="blank">instagram</a></p>
+		<p></br></br></br>I do not have other form of social media</p>
+		</div>
+		
+		<div class="box">
+			<p id="hobbies">Though I do not particulary have a hobby, I have a lot of things I like to do for fun
+			which Im not exactly good at but I have doing these.</p>
+			<h3>Some activities I enjoy doing:</h3>
+			<ul>
+				<li>Dance</li>
+				<li>Basketball</li>
+				<li>Eating</li>
+				<li>Gaming</li>
+				<li>Watching video essays</li>
+				<li>Car spotting</li>
+			</ul>
+		</div>
+		
+		<div class="box">
+			<h3 id="education">Education:</h3>
+			<ol>
+				<li>Primary school - <a href="https://mgs-jkt.sch.id/" target="blank">Mahatma Gading School </a></li>
+				<li>Lower-Secondary school - <a href="https://mgs-jkt.sch.id/" target="blank">Mahatma Gading School </a></li>
+				<li>Upper-Secondary school - <a href="https://www.penabur-inter.sch.id/" target="blank">Penabur International Kelapa Gading</a></li>
+			</ol>
+		</div>
+	</div>
+	
+	<div class="thirdbox" id="pics">
+		<div class="menu-item">
+			<img src="potboy.jpg" alt="Image 1">
+			<div class="description">Example of me eating good food</div>
+		</div>
+
+		<div class="menu-item">
+			<img src="Maybach.jpg" alt="Image 2">
+			<div class="description">One of my favorite car spots, a two-tone S600 Maybach</div>
+		</div>
+
+		<div class="menu-item">
+			<img src="fren.jpg" alt="Image 3">
+			<div class="description">This is me and my friends when we went to a trip in Bandung</div>
+		</div>
+	</div>
+	
+		<div class="fill">
+		<h2>This website is made by Harry Chiu</h2>
+		<h2>This is filler</h2>
+		<h2>This is filler</h2>
+		<h2>This is filler</h2>
+		<h2>This is filler</h2>
+		
+	</div>
+	
+  <script>
+		$(document).ready(function() {
+		$('.nav-list li a').click(function() {
+		$('.nav-list li a').removeClass('active');
+		$(this).addClass('active');
+		});
+	});
+	    $(document).ready(function() {
+      $('.menu-item').hover(
+        function() {
+          $(this).find('img').css('transform', 'scale(1.1)');
+          $(this).find('.description').css('opacity', '1');
+        },
+        function() {
+          $(this).find('img').css('transform', 'scale(1)');
+          $(this).find('.description').css('opacity', '0');
+        }
+      );
+    });
+  </script>
+</body>
+</html>
